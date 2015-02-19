@@ -1,0 +1,95 @@
+<head>
+    <title>WarpDrive</title>
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <h1>Media list</h1>
+        <!-- add a form below the h1 -->
+        <form class="new-task">
+            <input type="text" name="firstName" placeholder="First name" />
+            <input type="text" name="lastName" placeholder="Last name" />
+            <input type="submit" name="submit" />
+        </form>
+    </header>
+
+    <table class="table">
+        <caption>Journalists writing about [insert keyword search]</caption>
+        <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Publication</th>
+            <th>Title</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        </thead>
+        <tbody>
+            {{#each journalists}}
+                {{> journalist}}
+            {{/each}}
+        </tbody>
+    </table>
+
+
+    <table class="table">
+        <caption>Events for [insert keyword search]</caption>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Month</th>
+            <th>Deadline</th>
+            <th>Website</th>
+            <th>City</th>
+            <th>County</th>
+            <th>Continent</th>
+            <th>Description</th>
+            <th>Contact</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each industryEvents}}
+            {{> industryEvent}}
+        {{/each}}
+        </tbody>
+        </table>
+</div>
+</body>
+
+
+<template name="journalist">
+    <tr>
+        <td>{{firstName}}</td>
+        <td>{{lastName}}</td>
+        <td>{{publication}}</td>
+        <td>{{title}}</td>
+        <td>{{email}}</td>
+        <td>{{phone}}</td>
+    </tr>
+</template>
+
+<template name="industryEvent">
+    <tr>
+        <td>{{name}}</td>
+        <td>{{date}}</td>
+        <td>{{month}}</td>
+        <td>{{deadline}}</td>
+        <td>{{city}}</td>
+        <td>{{country}}</td>
+        <td>{{continent}}</td>
+        <td>{{details}}</td>
+        <td>{{contact}}</td>
+    </tr>
+</template>
+
+<template name="task">
+    <li>{{text}}</li>
+</template>
+<!--
+<input type="text" name="lastName" placeholder="Last name" />
+<input type="text" name="publication" placeholder="Publication" />
+-->
+
