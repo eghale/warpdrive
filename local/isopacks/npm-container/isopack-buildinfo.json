@@ -1,0 +1,38 @@
+{
+  "builtBy": "meteor/15",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/Ellie/warpdrive/warpdrive/packages/npm-container/package.js": "9ce2a9749631a7d058aaa7b8de4f6471b75079d5",
+        "/Users/Ellie/warpdrive/warpdrive/packages/npm-container/.npm/package/npm-shrinkwrap.json": "65159280e089bab66723806ace1771b347fc092b",
+        "/Users/Ellie/warpdrive/warpdrive/packages/npm-container/index.js": "9aa2b5331e90e2afca516ec1b67966ee05b61432",
+        "/Users/Ellie/warpdrive/warpdrive/packages.json": "ddbcc755c02d97e4b6eccc8161c0ff241567a23d"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/Ellie/warpdrive/warpdrive/packages/npm-container/package.js": "9ce2a9749631a7d058aaa7b8de4f6471b75079d5",
+        "/Users/Ellie/warpdrive/warpdrive/packages/npm-container/.npm/package/npm-shrinkwrap.json": "65159280e089bab66723806ace1771b347fc092b"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/Ellie/warpdrive/warpdrive/packages/npm-container/package.js": "9ce2a9749631a7d058aaa7b8de4f6471b75079d5"
+    },
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "npm-container": {
+      "kind": "local",
+      "sourceRoot": "/Users/Ellie/warpdrive/warpdrive/packages/npm-container"
+    },
+    "meteor": {
+      "kind": "versioned",
+      "version": "1.1.4"
+    }
+  },
+  "includeCordovaUnibuild": false
+}
